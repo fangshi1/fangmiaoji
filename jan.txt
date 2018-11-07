@@ -1,97 +1,84 @@
-$ git remote -v          ²é¿´Ô¶³ÌÁ¬½ÓµØÖ·
-$ git config --list      ²é¿´ÅäÖÃ 
-$ git add .  // Ôİ´æËùÓĞµÄ¸ü¸Ä
-$ git checkout . // ¶ªÆúËùÓĞµÄ¸ü¸Ä
-$ git status // ²é¿´ÎÄ¼ş×´Ì¬
-$ git commit -m "±¾´ÎÒªÌá½»µÄ¸ÅÒªĞÅÏ¢" // Ìá½»
-ÉèÖÃÔ¶¶Ë²Ö¿âµØÖ· git remote set-url origin ÄãµÄÔ¶¶ËµØÖ·
+$ git remote -v          æŸ¥çœ‹è¿œç¨‹è¿æ¥åœ°å€
+$ git config --list      æŸ¥çœ‹é…ç½® 
+$ git add .  // æš‚å­˜æ‰€æœ‰çš„æ›´æ”¹
+$ git checkout . // ä¸¢å¼ƒæ‰€æœ‰çš„æ›´æ”¹
+$ git status // æŸ¥çœ‹æ–‡ä»¶çŠ¶æ€
+$ git commit -m "æœ¬æ¬¡è¦æäº¤çš„æ¦‚è¦ä¿¡æ¯" // æäº¤
+è®¾ç½®è¿œç«¯ä»“åº“åœ°å€ git remote set-url origin ä½ çš„è¿œç«¯åœ°å€
 
-ÉèÖÃÔ¶³ÌµØÖ·£º£¨ÉÏÃæĞÂ½¨µÄ£© 
-git remote add origin_new ĞÂµÄµØÖ· 
-git remote ¨Cv²é¿´ 
-git push origin_new masterÖØĞÂÍÆËÍ 
-ÏÂÃæÊÇÉèÖÃÓÃ»§Ãû 
-Git config ¨Cglobal user.name ¡°ÓÃ»§Ãû¡± 
-git config ¨Cglobal user.email ÓÊÏäµØÖ·
+è®¾ç½®è¿œç¨‹åœ°å€ï¼šï¼ˆä¸Šé¢æ–°å»ºçš„ï¼‰ 
+git remote add origin_new æ–°çš„åœ°å€ 
+git remote â€“væŸ¥çœ‹ 
+git push origin_new masteré‡æ–°æ¨é€ 
+ä¸‹é¢æ˜¯è®¾ç½®ç”¨æˆ·å 
+Git config â€“global user.name â€œç”¨æˆ·åâ€ 
+git config â€“global user.email é‚®ç®±åœ°å€
 
-ÉèÖÃ´úÀí£º 
-git config ¨Cglobal https.proxy http://127.0.0.1:1080 
-È¡ÏûÉèÖÃ´úÀí£º 
-git config ¨Cglobal ¨Cunset https.proxy
+è®¾ç½®ä»£ç†ï¼š 
+git config â€“global https.proxy http://127.0.0.1:1080 
+å–æ¶ˆè®¾ç½®ä»£ç†ï¼š 
+git config â€“global â€“unset https.proxy
 
-È¡Ïûgit init²Ù×÷Ê±³öÏÖ rm: cannot remove ¡®.git¡¯: Is a directory 
-ÊÇÒòÎªÊäÈëµÄÃüÁîÊÇ£º rm -f .git 
-½â¾ö°ì·¨£ºrm -rf .git ¼´É¾³ıÕû¸ö.gitÄ¿Â¼
+å–æ¶ˆgit initæ“ä½œæ—¶å‡ºç° rm: cannot remove â€˜.gitâ€™: Is a directory 
+æ˜¯å› ä¸ºè¾“å…¥çš„å‘½ä»¤æ˜¯ï¼š rm -f .git 
+è§£å†³åŠæ³•ï¼šrm -rf .git å³åˆ é™¤æ•´ä¸ª.gitç›®å½•
 
-failed to push some refs to ¡®git@github.com:*.git¡¯ hint: Updates were rejected ¡¤¡¤¡¤ 
-Ê¹ÓÃgit push origin masterµÄÊ±ºò³öÏÖÒ»ÏÂ´íÎó£º
+failed to push some refs to â€˜git@github.com:*.gitâ€™ hint: Updates were rejected Â·Â·Â· 
+ä½¿ç”¨git push origin masterçš„æ—¶å€™å‡ºç°ä¸€ä¸‹é”™è¯¯ï¼š
 
-ÕâÀïĞ´Í¼Æ¬ÃèÊö
+è¿™é‡Œå†™å›¾ç‰‡æè¿°
 
-½â¾ö°ì·¨£º 
-git push -f origin master»òÕßgit pullÏÂ
+è§£å†³åŠæ³•ï¼š 
+git push -f origin masteræˆ–è€…git pullä¸‹
 
-ÕâÀïĞ´Í¼Æ¬ÃèÊö
+è¿™é‡Œå†™å›¾ç‰‡æè¿°
 
-»Ö¸´²»Ğ¡ĞÄÉ¾³ıµÄ git stash ÎÄ¼ş£º
+æ¢å¤ä¸å°å¿ƒåˆ é™¤çš„ git stash æ–‡ä»¶ï¼š
 
-git fsck  //ÕÒµ½danglingµÄ¶ÔÏó
-git show id  //ÉÏÃæÁĞ³öµÄÃ¿Ò»Ìõ¼ÇÂ¼µÄ×îºóÒ»¸ö×Ö·û´®£¬°´ enter ²é¿´¾ßÌåĞÅÏ¢
+git fsck  //æ‰¾åˆ°danglingçš„å¯¹è±¡
+git show id  //ä¸Šé¢åˆ—å‡ºçš„æ¯ä¸€æ¡è®°å½•çš„æœ€åä¸€ä¸ªå­—ç¬¦ä¸²ï¼ŒæŒ‰ enter æŸ¥çœ‹å…·ä½“ä¿¡æ¯
 git stash apply id
-1
-2
-3
-git »Ø¹öÌá½»
+git å›æ»šæäº¤
 
-//reset½«Ò»¸ö·ÖÖ§µÄÄ©¶ËÖ¸ÏòÁíÒ»¸öÌá½»¡£Õâ¿ÉÒÔÓÃÀ´ÒÆ³ıµ±Ç°·ÖÖ§µÄÒ»Ğ©Ìá½», ÈÃmaster·ÖÖ§Ïòºó»ØÍËÁËÁ½¸öÌá½»
+//resetå°†ä¸€ä¸ªåˆ†æ”¯çš„æœ«ç«¯æŒ‡å‘å¦ä¸€ä¸ªæäº¤ã€‚è¿™å¯ä»¥ç”¨æ¥ç§»é™¤å½“å‰åˆ†æ”¯çš„ä¸€äº›æäº¤, è®©masteråˆ†æ”¯å‘åå›é€€äº†ä¸¤ä¸ªæäº¤
 git checkout master
 git reset HEAD~2
  
-//Revert³·ÏúÒ»¸öÌá½»µÄÍ¬Ê±»á´´½¨Ò»¸öĞÂµÄÌá½», ÕÒ³öµ¹ÊıµÚ¶ş¸öÌá½»£¬È»ºó´´½¨Ò»¸öĞÂµÄÌá½»À´³·ÏúÕâĞ©¸ü¸Ä£¬È»ºó°ÑÕâ¸öÌá½»¼ÓÈëÏîÄ¿ÖĞ¡£
+//Revertæ’¤é”€ä¸€ä¸ªæäº¤çš„åŒæ—¶ä¼šåˆ›å»ºä¸€ä¸ªæ–°çš„æäº¤, æ‰¾å‡ºå€’æ•°ç¬¬äºŒä¸ªæäº¤ï¼Œç„¶ååˆ›å»ºä¸€ä¸ªæ–°çš„æäº¤æ¥æ’¤é”€è¿™äº›æ›´æ”¹ï¼Œç„¶åæŠŠè¿™ä¸ªæäº¤åŠ å…¥é¡¹ç›®ä¸­ã€‚
 git revert HEAD~2 
-1
-2
-3
-4
-5
-6
-´íÎó£ºPlease enter a commit message to explain why this merge is necessary. ½â¾ö°ì·¨£º 
-1. £¨¿ÉÑ¡£©°´¼üÅÌ×ÖÄ¸ i ½øÈëinsertÄ£Ê½ 
-2. £¨¿ÉÑ¡£©ĞŞ¸Ä×îÉÏÃæÄÇĞĞ»ÆÉ«ºÏ²¢ĞÅÏ¢ 
-3. °´¼üÅÌ×óÉÏ½Ç¡±Esc¡± £¨ÍË³öinsertÄ£Ê½£© 
-4. ÊäÈë¡±:wq¡±,°´»Ø³µ¼ü¼´¿É£¨Ìá½»£©
 
-gitignore notworking£º
+é”™è¯¯ï¼šPlease enter a commit message to explain why this merge is necessary. è§£å†³åŠæ³•ï¼š 
+1. ï¼ˆå¯é€‰ï¼‰æŒ‰é”®ç›˜å­—æ¯ i è¿›å…¥insertæ¨¡å¼ 
+2. ï¼ˆå¯é€‰ï¼‰ä¿®æ”¹æœ€ä¸Šé¢é‚£è¡Œé»„è‰²åˆå¹¶ä¿¡æ¯ 
+3. æŒ‰é”®ç›˜å·¦ä¸Šè§’â€Escâ€ ï¼ˆé€€å‡ºinsertæ¨¡å¼ï¼‰ 
+4. è¾“å…¥â€:wqâ€,æŒ‰å›è½¦é”®å³å¯ï¼ˆæäº¤ï¼‰
+
+gitignore notworkingï¼š
 
 git rm -r --cached .
 git add .
 git commit -m "fixed untracked files"
-1
-2
-3
-git Failed to connect to www.google.com port 80: Timed out ¿ÉÄÜÊÇÒòÎªÉèÖÃÁË´úÀí£º
 
-git config --global http.proxy          //²é¿´´úÀí
-git config --global --unset http.proxy  //È¡Ïû´úÀí
-1
-2
-HTTP Basic access denied on Git£º
+git Failed to connect to www.google.com port 80: Timed out å¯èƒ½æ˜¯å› ä¸ºè®¾ç½®äº†ä»£ç†ï¼š
+
+git config --global http.proxy          //æŸ¥çœ‹ä»£ç†
+git config --global --unset http.proxy  //å–æ¶ˆä»£ç†
+
+HTTP Basic access denied on Gitï¼š
 
 git config --global --unset credential.helper
-git clone '¡¤¡¤¡¤'
-login username£¬password
-1
-2
-3
-rebase ºÍ merge Çø±ğ
+git clone 'Â·Â·Â·'
+login usernameï¼Œpassword
+
+rebase å’Œ merge åŒºåˆ«
 
 git pull --rebase origin master
-1
-rebase Ñ¡Ïî¸æËß Git °ÑÄãµÄÌá½»ÒÆµ½Í¬²½ÁËÖĞÑë²Ö¿âĞŞ¸ÄºóµÄ master ·ÖÖ§µÄ¶¥²¿¡£rebase ²Ù×÷¹ı³ÌÊÇ°Ñ±¾µØÌá½»Ò»´ÎÒ»¸öµØÇ¨ÒÆµ½¸üĞÂÁËµÄÖĞÑë²Ö¿âmaster·ÖÖ§Ö®ÉÏ¡£ÕâÒâÎ¶×Å¿ÉÄÜÒª½â¾öÔÚÇ¨ÒÆÄ³¸öÌá½»Ê±³öÏÖµÄºÏ²¢³åÍ»£¬¶ø²»ÊÇ½â¾ö°üº¬ÁËËùÓĞÌá½»µÄ´óĞÍºÏ²¢Ê±Ëù³öÏÖµÄ³åÍ»¡£ÕâÑùµÄ·½Ê½ÈÃÄã¾¡¿ÉÄÜ±£³ÖÃ¿¸öÌá½»µÄ¾Û½¹ºÍÏîÄ¿ÀúÊ·µÄÕû½à¡£·´¹ıÀ´£¬¼ò»¯ÁËÄÄÀïÒıÈëBugµÄ·ÖÎö£¬Èç¹ûÓĞ±ØÒª£¬»Ø¹öĞŞ¸ÄÒ²¿ÉÒÔ×öµ½¶ÔÏîÄ¿Ó°Ïì×îĞ¡¡£
+
+rebase é€‰é¡¹å‘Šè¯‰ Git æŠŠä½ çš„æäº¤ç§»åˆ°åŒæ­¥äº†ä¸­å¤®ä»“åº“ä¿®æ”¹åçš„ master åˆ†æ”¯çš„é¡¶éƒ¨ã€‚rebase æ“ä½œè¿‡ç¨‹æ˜¯æŠŠæœ¬åœ°æäº¤ä¸€æ¬¡ä¸€ä¸ªåœ°è¿ç§»åˆ°æ›´æ–°äº†çš„ä¸­å¤®ä»“åº“masteråˆ†æ”¯ä¹‹ä¸Šã€‚è¿™æ„å‘³ç€å¯èƒ½è¦è§£å†³åœ¨è¿ç§»æŸä¸ªæäº¤æ—¶å‡ºç°çš„åˆå¹¶å†²çªï¼Œè€Œä¸æ˜¯è§£å†³åŒ…å«äº†æ‰€æœ‰æäº¤çš„å¤§å‹åˆå¹¶æ—¶æ‰€å‡ºç°çš„å†²çªã€‚è¿™æ ·çš„æ–¹å¼è®©ä½ å°½å¯èƒ½ä¿æŒæ¯ä¸ªæäº¤çš„èšç„¦å’Œé¡¹ç›®å†å²çš„æ•´æ´ã€‚åè¿‡æ¥ï¼Œç®€åŒ–äº†å“ªé‡Œå¼•å…¥Bugçš„åˆ†æï¼Œå¦‚æœæœ‰å¿…è¦ï¼Œå›æ»šä¿®æ”¹ä¹Ÿå¯ä»¥åšåˆ°å¯¹é¡¹ç›®å½±å“æœ€å°ã€‚
 
 git pull origin master
-1
-Èç¹ûÃ»ÓĞ rebase£¬ pull ²Ù×÷ÈÔÈ»¿ÉÒÔÍê³É£¬µ«Ã¿´Î pull ²Ù×÷ÒªÍ¬²½ÖĞÑë²Ö¿âÖĞ±ğÈËĞŞ¸ÄÊ±£¬Ìá½»ÀúÊ·»áÒÔÒ»¸ö¶àÓàµÄ¡ººÏ²¢Ìá½»¡»½áÎ²¡£ 
-ºÏ²¢Íæ³åÍ»Ö®ºó£¬git rebase --continue£¬Git »á¼ÌĞøÒ»¸öÒ»¸öµØºÏ²¢ºóÃæµÄÌá½»£¬ÈçÆäËüµÄÌá½»ÓĞ³åÍ»¾ÍÖØ¸´Õâ¸ö¹ı³Ì¡£ 
-Èç¹ûÄãÅöµ½ÁË³åÍ»£¬µ«·¢ÏÖ¸ã²»¶¨£¬²»Òª¾ª»Å¡£Ö»ÒªÖ´ĞĞÏÂÃæÕâÌõÃüÁî£¬¾Í¿ÉÒÔ»Øµ½ÄãÖ´ĞĞgit pull ¨CrebaseÃüÁîÇ°µÄÑù×Ó£ºgit rebase --abort
-Ö´ĞĞ git branch ºó¿´µ½×Ô¼ºµ±ÏÂÓÃµÄ·ÖÖ§ÊÇ master:
+
+å¦‚æœæ²¡æœ‰ rebaseï¼Œ pull æ“ä½œä»ç„¶å¯ä»¥å®Œæˆï¼Œä½†æ¯æ¬¡ pull æ“ä½œè¦åŒæ­¥ä¸­å¤®ä»“åº“ä¸­åˆ«äººä¿®æ”¹æ—¶ï¼Œæäº¤å†å²ä¼šä»¥ä¸€ä¸ªå¤šä½™çš„ã€åˆå¹¶æäº¤ã€ç»“å°¾ã€‚ 
+åˆå¹¶ç©å†²çªä¹‹åï¼Œgit rebase --continueï¼ŒGit ä¼šç»§ç»­ä¸€ä¸ªä¸€ä¸ªåœ°åˆå¹¶åé¢çš„æäº¤ï¼Œå¦‚å…¶å®ƒçš„æäº¤æœ‰å†²çªå°±é‡å¤è¿™ä¸ªè¿‡ç¨‹ã€‚ 
+å¦‚æœä½ ç¢°åˆ°äº†å†²çªï¼Œä½†å‘ç°æä¸å®šï¼Œä¸è¦æƒŠæ…Œã€‚åªè¦æ‰§è¡Œä¸‹é¢è¿™æ¡å‘½ä»¤ï¼Œå°±å¯ä»¥å›åˆ°ä½ æ‰§è¡Œgit pull â€“rebaseå‘½ä»¤å‰çš„æ ·å­ï¼šgit rebase --abort
+æ‰§è¡Œ git branch åçœ‹åˆ°è‡ªå·±å½“ä¸‹ç”¨çš„åˆ†æ”¯æ˜¯ master:
